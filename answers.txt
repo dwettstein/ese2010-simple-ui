@@ -12,3 +12,12 @@
       
    2. Mit dem play! framework hat man die Möglichkeit sogenannte Selenium-Tests zu schreiben. Selenium ist ein Tool um Web-Applikationen zu testen.
       Es testet das Programm direkt im Web-Browser, man kann somit sicher sein, dass man testet was man im Browser sieht.
+      
+      
+      
+      
+      
+      
+      
+   Some sample user for the qa-project: email: hans@gmail.com password: keyword
+   				     	email: admin@gmail.com password: admin
