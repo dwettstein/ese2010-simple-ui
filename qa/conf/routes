@@ -7,9 +7,18 @@ GET     /                                       Application.index
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
+GET     /questions/{id}                         Application.show
+
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
 
 # Import Secure routes
-*      /                module:secure
+*      /                						module:secure
+
+# Import CRUD routes
+*      /admin            						module:crud
+
+# Administration
+GET     /admin/?                                Admin.index
+*       /admin                                  module:crud

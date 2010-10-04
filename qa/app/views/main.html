@@ -10,7 +10,19 @@
         <script src="@{'/public/javascripts/jquery-1.4.2.min.js'}" type="text/javascript" charset="utf-8"></script>
         #{get 'moreScripts' /}
     </head>
-    <body>
-        #{doLayout /}
+    <body>       
+        <div id="header">
+            <div id="logo">
+                KnowledgeBase by dwettstein
+            </div>
+            <p>
+            	<a href="@{Admin.index()}">User administration</a>
+            </p>
+        </div>
+        
+        <div id="main">
+            #{doLayout /} 
+        </div>
+        
     </body>
 </html>
